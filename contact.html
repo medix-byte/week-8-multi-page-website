@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Website - Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">MySite</h1>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+    </nav>
+  </header>
+
+  <!-- Page Content -->
+  <main>
+    <section class="hero">
+      <h2>We value your feedback</h2>
+      <p>Feel free to reach out by sending a message to the provided details</p>
+    </section>
+    <section class="contact"> 
+      <h2>Contact Me</h2>
+      <form onsubmit="return validateForm()">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" required></textarea><br><br>
+
+        <button type="submit">Send</button>
+      </form>
+
+      <!-- Social Links -->
+      <div class="socials">
+        <h3>Connect with me</h3>
+        <ul>
+          <li><a href="https://wa.me/254102335827" target="_blank">WhatsApp</a></li>
+          <li><a href="https://www.linkedin.com/in/david-kabunyi" target="_blank">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/_m.e.d.i.x" target="_blank">Instagram</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 My Website | All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
